@@ -1,0 +1,18 @@
+<!doctype html>
+<title>Voice Uploader</title>
+<p>
+	{{ result }}
+</p>
+
+
+<form method="post" action="/verify" enctype="multipart/form-data">
+    <dl>
+
+		<p> WAV File : 
+			<input type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit" >
+	</p>
+</form>

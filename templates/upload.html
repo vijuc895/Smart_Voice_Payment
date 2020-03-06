@@ -1,0 +1,59 @@
+<!doctype html>
+<title>Voice Uploader</title>
+<!-- <p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p> -->
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lacquer|Lobster+Two|Major+Mono+Display|Neucha|Sacramento|Special+Elite|Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style media="screen">
+	body{
+		text-align: center;
+		background-color: #ede59a;
+		margin: 5% auto;
+	}
+	h3{
+		font-family: 'Special Elite', cursive;
+		font-size: 0.8rem;
+	}
+
+
+	.form{
+		color: #fff;
+		text-align: left;
+		background-color: #706c61;
+		width: 27%;
+		border-radius: 2%;
+		padding: 20px;
+		margin: 20px auto;
+	}
+</style>
+
+<h2 style="font-family: 'Lobster Two', cursive; margin-bottom: 20px;"> Record your Audio (~40s-60s) </h2>
+<!-- <a href="https://vocaroo.com/" target="_blank">Audio Recorder</a> -->
+<!-- <h3>  Step 1 : Open the above link  </h3> -->
+<h3>  Step 1 : Record your Audio </h3>
+<h3>  Step 2 : Save as .wav format  </h3>
+<h3>  Step 3 : Upload the same file here </h3>
+<div class="form">
+
+
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p> Username : <input type="text" name="username" requeired> </p>
+		<p> WAV File :
+			<input type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input class="btn btn-success" type="submit" value="Submit">
+	</p>
+</form>
+</div>
